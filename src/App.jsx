@@ -1,17 +1,24 @@
 import React from 'react'
 import './App.css'
-import GrandParent from './components/GrandParent'
+// import RefsDemo from './components/RefsDemo'
+import DocTitleOne from './components/DocTitleOne'
+import DocTitleTwo from './components/DocTitleTwo'
+// import ParentComp from './components/ParentComp'
+// import Counter from './components/Counter'
+// import GrandParent from './components/GrandParent'
 
-export const UserContext = React.createContext()
-export const ChannelContext = React.createContext()
+// export const UserContext = React.createContext()
+// export const ChannelContext = React.createContext()
 
 function App() {
   return (
-    <UserContext.Provider value="Nabendu">
-      <ChannelContext.Provider value="TWD">
-        <GrandParent />
-      </ChannelContext.Provider>
-    </UserContext.Provider>
+    <>
+      {/* <ParentComp /> */}
+      {/* <Counter /> */}
+      {/* <RefsDemo /> */}
+      <DocTitleOne />
+      <DocTitleTwo />
+    </>
   )
 }
 
